@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FeN47Ml7vDCye5tsWKtTM+kUPKLcnm1RB0FMagF5gFkdRnXYN6RGL7MFg6coubGk8B1dWGgPnWwPx7CDGFgY7Q==",
+  "dgSpecHash": "h7A2yQ5BpREAkZectq+OMmrMkSdBZ1gfx0zTnVGoB5KgCSSOPGPVmxGzjbkOjxe7zWh47Sh+6fLhHG8NuWLs9g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danie.DESKTOP-SSQL082\\source\\repos\\BankApplication\\BankApplication\\BankApplication.csproj",
+  "projectFilePath": "C:\\projects\\BankApplication\\BankApplication\\BankApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.8-rel-28605-00\\microsoft.net.native.compiler.2.2.8-rel-28605-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.10\\microsoft.net.uwpcoreruntimesdk.2.2.10.nupkg.sha512",
