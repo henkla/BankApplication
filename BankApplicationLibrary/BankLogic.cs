@@ -8,6 +8,13 @@ namespace BankApplicationLibrary
 {
     public class BankLogic
     {
+	    private List<Customer> _customers;
+	    public BankLogic()
+	    {
+		    // initiera listan i ctor så att den inte är null
+		    _customers = new List<Customer>();
+	    }
+	    
 		public List<string> GetCustomers()
 		{
 			List<string> customers = new List<string>();
@@ -17,12 +24,26 @@ namespace BankApplicationLibrary
 
 		public bool AddCustomer(string name, long pNr)
 		{
-			bool addSuccess = false;
-			return addSuccess;
+			if (CustomerExists(pNr))
+			{
+				// logga felet till loggarna eller konsolen kanske i detta fall
+			}
+			else
+			{
+				_customers.Add(new Customer(pNr, name, name));
+			}
+			
+			return CustomerExists(pNr);;
 			// Skapar en ny kund med namnet name samt personnummer pNr. Kunden skapas endast om det inte finns någon kund med personnummer pNr!
 			// Returnerar true om kunden skapades, annars false
 		}
 
+	    public bool CustomerExists(long pNr) 
+	    {
+		    // lyft in LINQ för detta
+		return _customers.Any(c => c.pNr == pNr);	    
+	    }
+	    
 		public List<string> GetCustomer(long pNr)
 		{
 			List<string> customerInfo = new List<string>();
